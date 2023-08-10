@@ -17,16 +17,4 @@ export default abstract class leaderService
         randomLeaderData.extraTurn ? leader.setExtraTurn(randomLeaderData.extraTurn) : leader.setExtraTurn('None');
         return leader;
     }
-
-    public static leaderToJSON(leader: Leader)
-    {
-        let data = {
-            name: leader.getName(),
-            image: leader.getImage(),
-            extraTurn: leader.getExtraTurn(),
-            preferedChoice: leader.getPreferedChoice(),
-            startBias: leader.getStartBias()
-        };
-        return data;
-    }
 }

@@ -38,6 +38,33 @@
                 "Leader"
             ],
             "extraTurn": null
+        },
+        {
+            "direction": "->",
+            "choice": [
+                "Red",
+                "Green",
+                "Leader"
+            ],
+            "extraTurn": null
+        },
+        {
+            "direction": "<-",
+            "choice": [
+                "Green",
+                "Red",
+                "Leader"
+            ],
+            "extraTurn": null
+        },
+        {
+            "direction": "<-",
+            "choice": [
+                "Red",
+                "Green",
+                "Leader"
+            ],
+            "extraTurn": "Triangle"
         }
     ] 
 }

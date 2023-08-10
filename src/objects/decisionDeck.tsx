@@ -21,4 +21,16 @@ export default class decisionDeck
             this.decisions.push(decision);
         });
     }
+
+    draw(): Decision
+    {
+        if(this.decisions.length >= 1) {
+            let n = Math.floor(Math.random() * this.decisions.length)
+            let decision = this.decisions.splice(n, 1);
+            return decision[0];
+        } else {
+            this.loadDecisions();
+            return this.draw();
+        }
+    }
 }
