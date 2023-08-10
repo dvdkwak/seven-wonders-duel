@@ -1,0 +1,43 @@
+{
+    "leaders": [
+        {
+            "name": "Alexandre the Great",
+            "image": "images/alexandre_the_great.jpg",
+            "extraTurn": null,
+            "startBias": "Alexandre starts with the military tech.",
+            "prereferedChoice": "Red"
+        },
+        {
+            "name": "William the Conqueror",
+            "image": "images/alexandre_the_great.jpg",
+            "extraTurn": null,
+            "startBias": "Alexandre starts with the military tech.",
+            "prereferedChoice": "Red"
+        },
+        {
+            "name": "David Someone",
+            "image": "images/alexandre_the_great.jpg",
+            "extraTurn": null,
+            "startBias": "Alexandre starts with the military tech.",
+            "prereferedChoice": "Red"
+        },
+        {
+            "name": "Pete the whistler",
+            "image": "images/alexandre_the_great.jpg",
+            "extraTurn": null,
+            "startBias": "Alexandre starts with the military tech.",
+            "prereferedChoice": "Red"
+        }
+    ],
+    "decisions": [
+        {
+            "direction": "->",
+            "choice": [
+                "Red",
+                "Green",
+                "Leader"
+            ],
+            "extraTurn": null
+        }
+    ] 
+}
