@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+import LeaderCard from './components/leaderCard';
+import DecisionCard from './components/decisionCard';
+
 import Leader from './models/Leader';
 import leaderService from './services/leaderService';
 import Decision from './models/Decision';
@@ -26,6 +29,7 @@ class App extends React.Component<{}, { leader: Leader, decision: Decision, isLo
   {
     if(!this.state.isLoaded) {
       this.chooseLeader();
+      this.getNextDecision();
       this.setState({
         isLoaded: true
       });
@@ -52,10 +56,12 @@ class App extends React.Component<{}, { leader: Leader, decision: Decision, isLo
     return (
       <div className="App">
         <header className="App-header">
-          { this.state.isLoaded ? this.state.leader.getName() : 'Loading...' }
-          <button onClick={this.chooseLeader}>New Leader</button>
-          <button onClick={this.getNextDecision}>Test</button>
-          { this.state.isLoaded ? this.state.decision.getChoice() : 'Loading...' }
+          <LeaderCard
+            leader={this.state.leader} />
+          <DecisionCard
+            decision={this.state.decision}
+            />
+          <button onClick={this.getNextDecision}>Draw Next decision</button>
         </header>
       </div>
     );

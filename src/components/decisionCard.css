@@ -1,0 +1,7 @@
+.decisionCard {
+    background: rgb(182, 100, 100);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+}
